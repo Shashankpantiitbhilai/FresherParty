@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <title>Fresher's Party</title>
+  <style>
+    .edugainer{
+ 
+      font-family: sans-serif;
+
+  margin-left: 15%;
+  margin-right: 15%;
+ 
+  color: yellow;
+
+}
+
+.edugainer p{
+  font-family: sans-serif;
+  font-size: 100px;
+   animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+  color: yellow;
+
+ 
+}
+
+@keyframes Color{
+  0%{
+    color:red;
+  }
+  
+  20%{
+    color:orange;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:orangered;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+
+@-moz-keyframes Color{
+  0%{
+    color:hsl(0, 56%, 62%);
+  }
+  
+  20%{
+    color:#824fe9;
+  }
+  
+  40%{
+    color:#FFCE54;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#ED5565;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+
+@-webkit-keyframes Color{
+  0%{
+    color:#5fb504;
+  }
+  
+  20%{
+    color:#008abc;
+  }
+  
+  40%{
+    color:#af7d00;
+  }
+  
+  60%{
+    color:#FC6E51;
+  }
+  
+  80%{
+    color:#cb0317;
+  }
+  
+  100%{
+    color:#AC92EC;
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  .edugainer p{
+    font-size: 65px;
+    font-family: sans-serif;
+  }}
+
+
+
+#typedtextintro {
+  font-family: sans-serif; 
+  font-size:30px; 
+  
+  letter-spacing: 6px; 
+  font-weight: bold;
+  text-align: center;
+  color: white;
+} 
+    .fresher{
+      margin-top: 20px;
+    }
+    .navigation{
+      font-size: x-large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color:white;
+    }
+    img{
+      width:70px;
+    
+   
+    }
+    .navbar{
+      background-color: black;
+      width: 100%;
+      margin: auto;
+      padding: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .navbar ul li{
+    font-size: 22px;;
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+  }
+  .navbar ul li a{
+      text-decoration: solid;
+      color: blueviolet;
+  }
+  .navbar ul li::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background: white;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+      width: 100%;
+  }
+  .para{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+    margin-top: 20px;
+    margin-left:30vw;
+    
+  }
+  .vp{
+   text-align: center;
+    text-transform: uppercase;
+  }
+  .cont {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .join {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+  }
+
+  .join:hover {
+    background-color: darkred;
+  }
+  .alert-container {
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    transition: bottom 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.alert-content {
+    padding: 10px;
+}
+
+.alert-button {
+    background-color: #e74c3c;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contact{
+  background-color: black;
+  color:blueviolet;
+}
+body{
+    background-color: black;
+}
+
+.cont{
+    margin-top: 30vh;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="logo.png" class="logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><button id="showAlert" class="contact" >Contact Us</button>
+<div class="alert-container" id="alertContainer">
+    <div class="alert-content">
+        <p>Contact No: +91 89519 16936</p>
+        <p>Email: +91 89519 16936</p>
+        <p>Contact No: +91 89519 16936</p>
+        <p>Contact No: +91 89519 16936</p>
+        <button class="alert-button" id="closeAlert">Close</button>
+    </div></li>
+      
+    </ul>
+  </div>
+  <div class="cont">
+        Coming Soon !!!!
+  </div>
+ 
+ 
+      
+  <script>
+    const showAlertButton = document.getElementById('showAlert');
+    const alertContainer = document.getElementById('alertContainer');
+    const closeAlertButton = document.getElementById('closeAlert');
+
+    showAlertButton.addEventListener('click', () => {
+        alertContainer.style.bottom = '0%';
+    });
+
+    closeAlertButton.addEventListener('click', () => {
+        alertContainer.style.bottom = '-100%';
+    });
+</script>
+      <footer class="mt-auto text-white-50">
+  
+  
+      </footer>
+   
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script>
+    var aText = new Array(
+  "Welcome to"
+  );
+  var iSpeed = 100; // time delay of print out
+  var iIndex = 0; // start printing array at this position
+  var iArrLength = aText[0].length; // the length of the text array
+  var iScrollAt = 20; // start scrolling up at this many lines
+  
+  var iTextPos = 0; // initialise text position
+  var sContents = ''; // initialise contents variable
+  var iRow; // initialise current row
+  
+  function typewriter() {
+  sContents = ' ';
+  iRow = Math.max(0, iIndex - iScrollAt);
+  var destination = document.getElementById("typedtextintro");
+  
+  while (iRow < iIndex) {
+    sContents += aText[iRow++] + '<br />';
+  }
+  destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+  if (iTextPos++ == iArrLength) {
+    iTextPos = 0;
+    iIndex++;
+    if (iIndex == aText.length) {
+      iIndex = 0; // Reset to the first line to repeat the typing effect
+    }
+    iArrLength = aText[iIndex].length;
+    setTimeout("typewriter()", 1000); // Add a pause before typing the next line
+  } else {
+    setTimeout("typewriter()", iSpeed);
+  }
+  }
+  typewriter();
+  </script>
+</body>
+</html> 
