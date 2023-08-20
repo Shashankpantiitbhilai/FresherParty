@@ -195,6 +195,7 @@ color: white;
 .contact{
 background-color: black;
 color:blueviolet;
+
 }
 h1{
 text-align: center;
@@ -471,8 +472,9 @@ color: white;
   color:white;
   
 }
-img{
+.logo{
   width:70px;
+  justify-content: center;
 
 
 }
@@ -695,4 +697,7 @@ height:300px;
 }
 .youtube{
   color:red;
+} 
+.navbar ul li:hover::after{
+  width: 100%;
 }
