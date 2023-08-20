@@ -144,7 +144,7 @@ color: white;
     justify-content: space-between;
 }
 .navbar ul li{
-  font-size: 22px;;
+  font-size: 1px;;
     list-style-type: none;
     display: inline-block;
     margin: 0 10px;
@@ -473,7 +473,7 @@ color: white;
   
 }
 .logo{
-  width:70px;
+  width:60px;
   justify-content: center;
 
 
@@ -488,7 +488,7 @@ color: white;
   justify-content: space-between;
 }
 .navbar ul li{
-font-size: 22px;;
+font-size: 15px;;
   list-style-type: none;
   display: inline-block;
   margin: 0 10px;
