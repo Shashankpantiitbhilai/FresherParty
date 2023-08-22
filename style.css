@@ -49,20 +49,21 @@ color: yellow;
 }
 
 #nav li{
-  background-color: #2de771;
+  background-color: black;
   padding:1vh;
   border-radius: 2vh;
   border: 0.2vw solid black;
   opacity: 100%;
+  
 }
 
 #nav li:hover{
-  background-color: #ffff00;
+  background-color: rgb(88, 76, 65);
   }
 
 
 #nav li a{
-  color:black;
+  color:white;
   font-size:0.9vw;
   opacity: 100%;
   text-decoration: solid;
@@ -323,7 +324,7 @@ color: white;
 }
 .para{
   font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Cascadia Code';
   margin-top:10px;
   margin-bottom:10px;
   text-align: center;
@@ -865,3 +866,64 @@ height:300px;
   ;
   text-align: center;
 }
+
+.animate-charcter
+{
+  
+  background-image: linear-gradient(
+    -225deg,
+   orange 29%,
+    #44107a 20%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+      font-size: 35px;
+      font-family: 'high tower text','footlight MT Light','cascadia code';
+      margin: 13px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }}
+  .date{
+    
+  
+      background-image: linear-gradient(
+        -225deg,
+       orange 29%,
+        #44107a 200%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: text;
+  
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+
+
+
+  }
+
+  }
+
