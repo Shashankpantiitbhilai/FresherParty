@@ -1,6 +1,7 @@
 body{
-   
+  
   }
+  
   .edugainer{
 
     font-family: sans-serif;
@@ -20,6 +21,113 @@ font-size: 100px;
 color: yellow;
 
 
+}
+
+.navbar{
+  position:fixed;
+  z-index: 2;
+  top:0vh;
+  color:black;
+  height:9vh;
+  opacity: 70%;
+}
+
+.logo{
+  position: fixed;
+  z-index:3;
+  top:0.3vh;
+  left:1vh;
+  opacity: 100%;
+  height:8vh;
+}
+
+#nav{
+  position:fixed;
+  z-index:3;
+  top:1.8vh;
+  right:1vh;
+  opacity: 100%;
+}
+
+#nav li{
+  background-color: black;
+  padding:1vh;
+  border-radius: 2vh;
+  border: 0.2vw solid black;
+  opacity: 100%;
+  
+}
+
+#nav li:hover{
+  background-color: rgb(88, 76, 65);
+  }
+
+
+#nav li a{
+  color:white;
+  font-size:0.9vw;
+  opacity: 100%;
+  text-decoration: solid;
+}
+
+.mx-auto{
+  position:relative;
+  z-index:1;
+}
+
+.wrapper{
+  margin-bottom: 2vh;
+}
+
+#maintitle{
+  font-family: rowdies;
+  font-size: 6.5vw;
+}
+
+#description{
+  font-size: 2vw;
+}
+
+.venue{
+  font-size: 1.5vw;
+}
+
+.venuepich{
+  font-size: 1.7vw;
+  margin-bottom: 1.5vh;
+}
+
+#letsgo{
+  display:flex;
+  font-size: 2.9vw;
+  align-items: center;
+}
+
+#contactus{
+  display:flex;
+  font-size: 2.9vw;
+  align-items: center;
+  justify-content: center;
+  font-family: raleway;
+}
+
+.social{
+  padding:0.8vw 0.8vw 1.1vw 0.8vw;
+  border: 0.5vh solid rgb(42, 113, 255);
+  border-radius: 4vh;
+}
+
+.social:hover{
+  background-color: white;
+  color:black;
+}
+
+.contactnames{
+  font-size: 1vw;
+}
+
+.contactnumber{
+  font-size: 1vw;
 }
 
 @keyframes Color{
@@ -107,7 +215,55 @@ color: yellow;
 .edugainer p{
   font-size: 65px;
   font-family: sans-serif;
-}}
+}
+
+.logo{
+  height:7vh;
+  top:1.1vh;
+}
+
+#nav li{
+  top:1.2vh;
+}
+
+#nav li a{
+  font-size: 2vw;
+}
+
+#typedtextintro{
+  font-size: 0.1vw;
+}
+
+#maintitle{
+  font-size: 9vw;
+}
+
+#description{
+  font-size: 4vw;
+}
+
+.venue{
+  font-size: 4vw;
+}
+
+#letsgo{
+  font-size: 5vw;
+}
+
+#contactus{
+  font-size: 6vw;
+}
+
+.social{
+  align-items: center;
+  justify-content: center;
+  padding:1.6vw 1.6vw 2.4vw 1.6vw;
+  /* padding-left: 0.8vw; */
+  border: 0.5vh solid rgb(42, 113, 255);
+  border-radius: 3vh;
+}
+
+}
 
 
 
@@ -169,13 +325,14 @@ color: white;
 }
 .para{
   font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Cascadia Code';
   margin-top:10px;
   margin-bottom:10px;
   text-align: center;
   
   
 }
+
 
 .cont {
   text-align: center;
@@ -710,3 +867,64 @@ height:300px;
   ;
   text-align: center;
 }
+
+.animate-charcter
+{
+  
+  background-image: linear-gradient(
+    -225deg,
+   orange 29%,
+    #44107a 20%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+      font-size: 35px;
+      font-family: 'high tower text','footlight MT Light','cascadia code';
+      margin: 13px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }}
+  .date{
+    
+  
+      background-image: linear-gradient(
+        -225deg,
+       orange 29%,
+        #44107a 200%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: text;
+  
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+
+
+
+  }
+
+  }
+

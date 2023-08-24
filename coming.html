@@ -8,275 +8,129 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link href="stylw.css"rel="stylesheet">
+<link href="style.css"rel="stylesheet">
   <title>Fresher's Party</title>
   <style>
-    .edugainer{
- 
-      font-family: sans-serif;
-
-  margin-left: 15%;
-  margin-right: 15%;
- 
-  color: yellow;
-
-}
-
-.edugainer p{
-  font-family: sans-serif;
-  font-size: 100px;
-   animation: Color 4s linear infinite;
-  -webkit-animation: Color 4s ease-in-out infinite;
-  color: yellow;
-
- 
-}
-
-@keyframes Color{
-  0%{
-    color:red;
-  }
-  
-  20%{
-    color:orange;
-  }
-  
-  40%{
-    color:#FFCE54;
-  }
-  
-  60%{
-    color:#FC6E51;
-  }
-  
-  80%{
-    color:orangered;
-  }
-  
-  100%{
-    color:#AC92EC;
-  }
-}
-
-@-moz-keyframes Color{
-  0%{
-    color:hsl(0, 56%, 62%);
-  }
-  
-  20%{
-    color:#824fe9;
-  }
-  
-  40%{
-    color:#FFCE54;
-  }
-  
-  60%{
-    color:#FC6E51;
-  }
-  
-  80%{
-    color:#ED5565;
-  }
-  
-  100%{
-    color:#AC92EC;
-  }
-}
-
-@-webkit-keyframes Color{
-  0%{
-    color:#5fb504;
-  }
-  
-  20%{
-    color:#008abc;
-  }
-  
-  40%{
-    color:#af7d00;
-  }
-  
-  60%{
-    color:#FC6E51;
-  }
-  
-  80%{
-    color:#cb0317;
-  }
-  
-  100%{
-    color:#AC92EC;
-  }
-}
-
-
-
-
-@media (max-width: 767px) {
-  .edugainer p{
-    font-size: 65px;
-    font-family: sans-serif;
-  }}
-
-
-
-#typedtextintro {
-  font-family: sans-serif; 
-  font-size:30px; 
-  
-  letter-spacing: 6px; 
-  font-weight: bold;
-  text-align: center;
-  color: white;
-} 
-    .fresher{
-      margin-top: 20px;
-    }
-    .navigation{
-      font-size: x-large;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color:white;
-    }
-    img{
-      width:70px;
-    
-   
-    }
-    .navbar{
+    body{
       background-color: black;
-      width: 100%;
-      margin: auto;
-      padding: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
-  .navbar ul li{
-    font-size: 15px;
-      list-style-type: none;
-      display: inline-block;
-      margin: 0 10px;
-      position: relative;
-  }
-  .navbar ul li a{
-      text-decoration: solid;
-      color: blueviolet;
-  }
-  .navbar ul li::after{
-      content: '';
-      height: 3px;
-      width: 0;
-      background: white;
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      transition: 0.5s;
-  }
-  .navbar ul li:hover::after{
-      width: 100%;
-  }
-  .para{
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
-    margin-top: 20px;
-    margin-left:30vw;
-    
-  }
-  .vp{
-   text-align: center;
-    text-transform: uppercase;
-  }
-  .cont {
-    text-align: center;
-    margin-top: 20px;
-  }
+    }
 
-  .join {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-   
-  }
-
-  .join:hover {
-    background-color: darkred;
-  }
-  .alert-container {
-    position: fixed;
-    bottom: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-    transition: bottom 0.3s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.alert-content {
-    padding: 10px;
-}
-
-.alert-button {
-    background-color: #e74c3c;
-    color: black;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.contact{
-  background-color: black;
-  color:blueviolet;
-}
-body{
-    background-color: black;
-}
-
-.cont{
-    margin-top: 30vh;
-    text-align: center;
-    color: white;
-    font-size: 60px;
-}
-.contact{
+.head{
   text-align: center;
-
-}
-.foot{
   color:white;
 }
 
+.video{
+  position: fixed;
+
+  z-index: inherit;
+}
+.border{
+  border:5px solid white;
+  
+
+}
+.class{
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
   </style>
 </head>
 <body>
-  <div class="navbar ">
-    <img src="logo.png" class="logo">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="coming.html">Events</a></li> 
-      <li><a href="index.html#contact" >Contact Us</a></li>
+  <div class="navbar">
+    <img src="logo2.png" class="logo">
+    <ul id="nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="coming.html">EVENTS</a></li> 
+      <li><a href="index.html#contact" >CONTACT US</a></li>
       
-      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
       
     </ul>
   </div>
-  <div class="cont">
-        Coming Soon !!!!
-  </div>
- 
+
+    <div class="row">
+      <video class="mx-auto video" autoplay loop muted>
+        <source src="events.mp4" type="video/mp4" />
+      </video>
+    </div>
+    </div>
+    <div class="border">
+  <div class="container px-4 py-5 " id="custom-cards">
+  
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col-md-6">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('ramp.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold head">RampWalk</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+           
+             
+            </ul>
+          </div>
+        </div>
+     </div>
+
+      <div class="col-md-6">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('paperdance.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold head">Paper Dance</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+             
+          </div>
+        </div>
+      </div>
 
 
+        <div class="col-md-6">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('lipsync.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold head">Lip Sync</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-center g-4 py-5 class">
 
+        <div class="col-md-6">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg " style="background-image: url('openstage.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold head ">Open Stage</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+     
+        <div class="col-md-6 ">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('dj.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold head">DJ Night</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div></div>
+        <div class="card text-bg-dark head">
+        
+          <h5 class="card-title">Mr & Miss Fresher will be anounced!!!</h5>
+
+        </div>
+      </div>
   <script>
     const showAlertButton = document.getElementById('showAlert');
     const alertContainer = document.getElementById('alertContainer');
